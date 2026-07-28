@@ -1,7 +1,7 @@
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 // import ListCard from "../components/ListCards";
-import Card from "../components/Card";
+import detailCard from "../components/detailCard"
 
 
 function Details() {
@@ -10,7 +10,7 @@ function Details() {
             <NavBar />
 
             <main>
-                <Card />
+                <detailCard />
 
             </main>
             

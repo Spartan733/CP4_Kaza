@@ -16,10 +16,12 @@ export default function ListCard() {
             {logements.map((logements) => (
                 <Card
                     key={logements.id}
+                    id={logements.id}
                     images={logements.pictures}
                     title={logements.title}
                     location={logements.location}
                     tags={logements.tags}
+                    rating={logements.rating}
                     // onClick={goToDetailsPages}
                 />
             ))} 

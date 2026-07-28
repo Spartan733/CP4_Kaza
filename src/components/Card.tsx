@@ -1,22 +1,25 @@
 import { Link } from "react-router-dom";
+// import logements from '../data/logements.json';
 
 type CardProps = {
     id: string;
     images: string[];
     title: string;
     location: string;
-    tags: string;
-    hostName: string;
-    hostPictures: string;
+    tags: string[];
     rating: string;
-    desc: string;
-    stuff: string;
 };
 
-export default function Card({id, images, title, location, tags, rating} : CardProps) {
+// function GetIdOnClick =  (id: string) => {
+//     console.log("Id dela carte récupérer :", id)
+// }
+
+
+export default function Card({images, title, location, tags, rating} : CardProps) {
     return(
             <div>
-                <Link to={`../pages/Details.tsx/logements/${id}`}>
+                <Link to={`../components/detailCard.tsx`}>
+                    {/* // onClick={() => GetIdOnClick()} */}
                     <img src={images[0]} alt={title} />
                 </Link>
                 <h2>{title}</h2>
