@@ -5,7 +5,7 @@ function Home() {
     return (
         <>
             <NavBar />
-
+npm
             <main>
                 <h1>Trouvez votre logement idéal</h1>
                 <p>Découvrez des hébergements uniques et vivez comme un local partout dans le monde</p>

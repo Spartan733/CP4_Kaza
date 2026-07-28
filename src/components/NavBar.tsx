@@ -1,5 +1,5 @@
 import {useState} from 'react'
-import {link} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 
 export default function NavBar() {
@@ -19,8 +19,8 @@ export default function NavBar() {
                 </button>
 
                 <div className='Nav'>
-                    <link to="/">Accueil</link>
-                    <link to="../pages/About.tsx">A propos</link>
+                    <Link to="/">Accueil</Link>
+                    <Link to="../pages/About.tsx">A propos</Link>
                     <a href='/'>Contact</a>
                 </div>
             </div>

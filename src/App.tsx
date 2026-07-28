@@ -128,7 +128,7 @@ import Home from './pages/Home';
 import Details from './pages/Details';
 import Not_Found from './pages/NotFound';
 
-function App(){
+function App() {
   return( 
     <Router>
       <Routes>
@@ -140,4 +140,4 @@ function App(){
   );
 }
 
-export default App;
+export default App

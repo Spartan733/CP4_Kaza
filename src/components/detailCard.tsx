@@ -6,10 +6,10 @@ type detailCardProps = {
     id: string;
 };
 
-export default function detailCard({id}: detailCardProps) {
-    const lieu = location.find((1) => 1.id === id);
+const [indexImage, setIndexImage] = useState(0);
 
-    const [indexImage, setIndexImage] = useState(0);
+export default function detailCard({id}: detailCardProps) {
+    const lieu = location.find((1) => 1.id === id),
 
     if(!lieu) {
         return <p>Ce lieu n'existe pas</p>
@@ -27,8 +27,8 @@ export default function detailCard({id}: detailCardProps) {
 
         {/* Carousel */}
         <img>
-            src={logements.images[indexImage]}
-            alt={logements.title}
+            src={logements.images[indexImage]},
+            alt={logements.title},
         </img>
 
         {/* Bouton prevImage */}
