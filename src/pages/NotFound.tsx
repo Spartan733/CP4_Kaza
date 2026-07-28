@@ -1,7 +1,7 @@
 function Not_Found() {
     return (
         <>
-            <h1>Bienvenue sur la page D'erreur</h1>
+            <h1>Bienvenue sur la page d'erreur</h1>
         </>
     )
 }

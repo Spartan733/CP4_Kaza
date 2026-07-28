@@ -1,11 +1,16 @@
+// import { useNavigate } from "react-router-dom";
 import Card from "./Card";
 import logements from "../data/logements.json"
 
-type listCardProps = {
-    onCardClick: (id: string) => void;
-}
 
 export default function ListCard() {
+    // // function component( {/logements/:id} ) {
+    //     const navigate = useNavigate();
+    // }
+
+    // const goToDetailsPages = () => {
+    //     navigate('../pages/Details.tsx/logements/:id')
+    // }
     return (
         <div>
             {logements.map((logements) => (
@@ -14,7 +19,8 @@ export default function ListCard() {
                     images={logements.pictures}
                     title={logements.title}
                     location={logements.location}
-                    onClick={() => onCardClick(logements.id)}
+                    tags={logements.tags}
+                    // onClick={goToDetailsPages}
                 />
             ))} 
         </div>
