@@ -1,0 +1,118 @@
+@import './Scss\ gobaux.scss';
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: $bg-color;
+    padding: 50px 60px 20px;
+    font-family: $footer-font;
+
+    @media (max-width: $breakpoint-mobile-footer){
+        flex-direction: column;
+        gap: 30px;
+        padding: 40px 24px 20px;
+    }
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+
+        h3{
+            color: $title-color;
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+
+            li a {
+                color: $link-color;
+                font-size: 0.85rem;
+                text-decoration: none;
+                
+            }
+        }
+}
+
+.support{
+    display: flex;
+    flex-direction: column;
+
+        h3{
+            color: $title-color;
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+
+            li a {
+                color: $link-color;
+                font-size: 0.85rem;
+                text-decoration: none;
+
+            }
+        }
+}
+
+.legal{
+    display: flex;
+    flex-direction: column;
+
+        h3{
+            color: $title-color;
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+
+            li a {
+                color: $link-color;
+                font-size: 0.85rem;
+                text-decoration: none;
+                
+            }
+        }
+}
+
+.footer {
+    position: relative;
+
+    > div:last-child {
+        width: 100%;
+        text-align: center;
+        margin-top: 40px;
+        padding-top: 20px;
+        border-top: 1px solid $color-separator;
+
+        p {
+            color: $color-copyright;
+            font-size: 0.8rem;
+            margin: 0;
+        }
+    }
+}

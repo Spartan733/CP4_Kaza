@@ -1,5 +1,6 @@
-import {useState} from 'react'
-import {Link} from 'react-router-dom'
+import {useState} from 'react';
+import {Link} from 'react-router-dom';
+import '../styles/NavBar.scss';
 
 
 export default function NavBar() {
@@ -20,7 +21,7 @@ export default function NavBar() {
 
                 <div className='Nav'>
                     <Link to="/">Accueil</Link>
-                    <Link to="../pages/About.tsx">A propos</Link>
+                    <Link to="/">A propos</Link>
                     <a href='/'>Contact</a>
                 </div>
             </div>

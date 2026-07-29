@@ -7,13 +7,15 @@ import Collapse from '../components/Collapse';
 
 import logements from '../data/logements.json';
 
+import '../styles/Details.scss'
+
 function Details() {
     const { id } = useParams();
 
     const logement = logements.find((logement) => logement.id === id);
 
     if(!logement) {
-        return <Navigate to='../pages/NotFound.tsx' />
+        return <Navigate to='/404' />
     }
 
     return (
@@ -65,7 +67,6 @@ function Details() {
 
             </main>
             
-
             <Footer />
         </>
     )

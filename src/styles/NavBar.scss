@@ -1,0 +1,91 @@
+@import './Scss\ gobaux.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    width: 100%;
+    background-color: #ffffff;
+    box-sizing: 0 2px 6px $color-shadow;
+    position: relative;
+    z-index: 10;
+
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: $nav-height;
+    padding: 0 60px;
+
+    span {
+        color: #FF6B6B;
+        font-family: $logo-font;
+        font-size: 2rem;
+        font-weight: 400;
+    }
+
+    @media (max-width: $breakpoint-mobile) {
+        padding: 0 24px;
+    }
+        
+}
+
+.Nav{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+            
+    a {
+        font-family: $nav-btn-font;
+        font-size: 0.95rem;
+        font-weight: 500;
+        color: $nav-btn-color;
+        text-decoration: none;
+
+        &:hover {
+            color: $color-text-hover;
+        }
+
+    }
+
+    @media (max-width: $breakpoint-mobile) {
+        display: none;
+    }
+}
+
+.btn_menu_mobile{
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: $primary-color;
+
+    @media (max-width: $breakpoint-mobile){
+        display: block;
+    }
+}
+
+.mobile_Menu_Open{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px $color-shadow;
+
+    a{
+        font-family: $nav-btn-font;
+        font-size: 1rem;
+        font-weight: 500;
+        color: $primary-color;
+        text-decoration: none;
+
+        &:hover {
+            color: $color-text-hover;
+        }
+    }
+}

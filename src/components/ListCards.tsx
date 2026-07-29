@@ -2,17 +2,13 @@
 import Card from "./Card";
 import logements from "../data/logements.json"
 
+import '../styles/ListCard.scss'
+
 
 export default function ListCard() {
-    // // function component( {/logements/:id} ) {
-    //     const navigate = useNavigate();
-    // }
-
-    // const goToDetailsPages = () => {
-    //     navigate('../pages/Details.tsx/logements/:id')
-    // }
+    
     return (
-        <div>
+        <div className="list_card">
             {logements.map((logements) => (
                 <Card
                     key={logements.id}
@@ -22,7 +18,6 @@ export default function ListCard() {
                     location={logements.location}
                     tags={logements.tags}
                     rating={logements.rating}
-                    // onClick={goToDetailsPages}
                 />
             ))} 
         </div>
