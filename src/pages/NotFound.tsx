@@ -7,7 +7,7 @@ function Not_Found() {
             <NavBar />
 
             <main>
-                <h1>Bienvenue sur la page d'erreur</h1>
+                <h1>Erreur 404, Page non trouver</h1>
             </main>
 
             <Footer />
