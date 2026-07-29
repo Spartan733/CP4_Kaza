@@ -1,5 +1,6 @@
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
+import '../styles/404.scss';
 
 function Not_Found() {
     return (
