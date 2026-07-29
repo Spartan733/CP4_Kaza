@@ -29,8 +29,8 @@ function Details() {
                         <p>{logement.location}</p>
                     
 
-                        <div className='tags'>
-                            {logements.map((tag) => (
+                        <div className="tags">
+                            {logement.tags.map((tag) => (
                                 <span key={tag}>{tag}</span>
                             ))}
                         </div>

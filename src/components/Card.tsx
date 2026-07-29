@@ -6,6 +6,8 @@ type CardProps = {
     images: string[];
     title: string;
     location: string;
+    tags: string[];
+    rating: string;
 };
 
 
